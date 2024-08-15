@@ -1,47 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Título do documento</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/bootstrap.js"></script>
+    <script src="js/funcoes.js">
+    </script>
 </head>
+
 <body>
-   <h1>Primeiro cabeçalho</h1> 
-   <h2>Segundo cabeçario</h2> 
-   <h3>Primeiro cabeçalho</h3> 
-   <p>Primeiro paragrafo</p>
+    <h1>Primeiro cabeçalho</h1>
+    <h2>Segundo cabeçario</h2>
+    <h3>Primeiro cabeçalho</h3>
+    <p>Primeiro paragrafo</p>
 
-   <img src="img/random.jpg" alt="imagem aleatória" title="Titulo qualquer" width="300">
-   <a href="http://www.uft.edu.br/" target="_blank">Segura esse link ae</a>
+    <img src="img/random.jpg" alt="imagem aleatória" title="Titulo qualquer" width="300"><br>´
+    <a href="http://www.uft.edu.br/" target="_blank">Segura esse link ae</a>
 
-   <ul>
-    <li>Item 1</li>
-    <li>Item 2</li>
-    <li>Item 3</li>
-   </ul>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
 
-   <ol>
-    <li>Item 4</li>
-    <li>Item 5</li>
-    <li>Item 6</li>
-   </ol>
+    <ol>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+    </ol>
 
-   <table>
-    <tr>
-        <td>Linha 1 - Coluna 1</td>
-        <td>Linha 1 - Coluna 2</td>
-    </tr>
-    <tr>
-        <td>Linha 2 - Coluna 1</td>
-        <td>Linha 2 - Coluna 2</td>
-    </tr>
-    <tr>
-        <td>Linha 3 - Coluna 1</td>
-        <td>Linha 3 - Coluna 2</td>
-    </tr>
-    <tr>
-        <td>Linha 4 - Coluna 1</td>
-        <td>Linha 4 - Coluna 2</td>
-    </tr>
-   </table>
+    <table>
+        <tr>
+            <td>Linha 1 - Coluna 1</td>
+            <td>Linha 1 - Coluna 2</td>
+        </tr>
+        <tr>
+            <td>Linha 2 - Coluna 1</td>
+            <td>Linha 2 - Coluna 2</td>
+        </tr>
+        <tr>
+            <td>Linha 3 - Coluna 1</td>
+            <td>Linha 3 - Coluna 2</td>
+        </tr>
+        <tr>
+            <td>Linha 4 - Coluna 1</td>
+            <td>Linha 4 - Coluna 2</td>
+        </tr>
+    </table>
+
+    <form action="./cadastro/" method="post">
+        <label for="login">Login:</label>
+        <input type="text" name="login" id="login" placeholder="Digite aqui..."><br>
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" id="senha">
+        <p>Decida:</p>
+        What is love?<br>
+        <label for="1">Baby,don't hurt me</label>
+        <input type="radio" name="radios" id="1"><br>
+        <label for="2">Dont't hurt me</label>
+        <input type="radio" name="radios" id="2"><br>
+        <label for="3">No more</label>
+        <input type="radio" name="radios" id="3">
+
+        Curso:
+        <select name="curso" id="curso">
+            <option value="1">Ciência da Computação</option>
+            <option value="2">Engenharia Civil</option>
+            <option value="3">Medicina</option>
+            <option value="4">Enfermagem</option>
+        </select><br>
+        Mensagem: <br>
+        <textarea name="message" id="Mensagem" cols="30" rows="30">
+        Wow!
+        </textarea><br>
+
+        Idade: <input type="number" name="Idade" id="Idade" step="1" min="18" max="45"><br>
+        Data de nascimento: <input type="date" name="Data" id="Data"><br>
+
+        Auto complete: <input list="cheeses">
+        <datalist id="cheeses">
+            <option value="">Ciência da Computação</option>
+            <option value="">Engenharia Civil</b></option>
+            <option value="">Medicina</option>
+            <option value="">Enfermagem</option>
+        </datalist>
+
+        <input type="reset" value="Limpar">
+        <input type="submit" value="Enviar">
+    </form>
+    <button onclick="soma(10 ,10)">SOmarr</button>
 </body>
+
 </html>
